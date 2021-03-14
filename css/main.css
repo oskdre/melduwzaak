@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Blinker:wght@100;600&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap");
+:root {
+  --primary-color: #007AF3;
+  --light-whatsup: #25D366;
+  --dark-whatsup:#128C7E;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0;
+  font-family: 'Blinker';
+}
+
+.navbar {
+  background: #21468B;
+  padding: 1.0em 1em 1.0em 3em;
+  font-family: 'Poppins';
+}
+
+.navbar .logo {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Swanky and Moo Moo';
+}
+
+.navbar .logo margin
+.first {
+  color: whitesmoke;
+}
+
+.navbar .logo .middle {
+  color: whitesmoke;
+}
+
+.navbar .logo .last {
+  color: #AE1C28;
+}
+
+.navbar nav {
+  display: none;
+  font-size: 1.1em;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.about {
+  text-align: center;
+}
+
+.about::after {
+  content: "";
+  background: url("../images/nlphoo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #494747;
+  letter-spacing: .1em;
+  text-align: center;
+}
+
+.left-col .flag-container {
+  display: inline-block;
+}
+
+.left-col .flag-container .holland-flag {
+  width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-col .primary-cta {
+  background: #21468B;
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  margin-bottom: 2em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+section.features-section {
+  background: #20272E;
+  color: white;
+}
+
+ul.features-list {
+  margin: 0;
+  padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  font-weight: bold;
+  position: relative;
+  z-index: 300;
+}
+
+ul.features-list li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.features-section img {
+  display: none;
+}
+
+.testimonials-section {
+  background: var(--primary-color);
+  color: white;
+}
+
+.testimonials-section li {
+  background: #006BD6;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.testimonials-section li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006BD6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 97%;
+    /* Full width */
+    z-index: 999;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: whitesmoke;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+    color: whitesmoke;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.whatsapp-cta a {
+    color: var(--light-whatsup);
+    border: 3px solid var(--light-whatsup);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -.2em;
+    font-family: 'Abel';
+  }
+  .navbar nav li.whatsapp-cta a:hover {
+    background: var(--light-whatsup);
+    border: 3px solid var(--light-whatsup);
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 97%;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .about .container .features-container {
+    padding: 2.3em;
+  }
+  .about .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .about .container .left-col .flag-container {
+    display: inline-block;
+  }
+  .about .container .left-col .flag-container .holland-flag {
+    width: 10%;
+  }
+  .about .container .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .about-img {
+    width: 30%;
+    margin-right: 8em;
+  }
+  .about-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1em;
+  }
+  ul.features-list {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.features-list li {
+    font-size: 1.4em;
+  }
+  ul.features-list li:before {
+    width: 30px;
+    height: 30px;
+  }
+  .features-section {
+    position: relative;
+  }
+  .features-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-right iframe {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
