@@ -28,8 +28,7 @@ body {
   font-family: 'Swanky and Moo Moo';
 }
 
-.navbar .logo margin
-.first {
+.navbar .logo .first {
   color: whitesmoke;
 }
 
@@ -75,6 +74,10 @@ section {
   text-align: center;
 }
 
+.about .features-container {
+  padding-top: 1.5em;
+}
+
 .about::after {
   content: "";
   background: url("../images/nlphoo.jpg");
@@ -88,6 +91,7 @@ section {
   right: 0;
   position: absolute;
   z-index: -1;
+  height: 150%;
 }
 
 .left-col .subhead {
@@ -123,7 +127,6 @@ section {
   color: white;
   text-decoration: none;
   padding: .6em 1.3em;
-  margin-bottom: 2em;
   font-size: 1.4em;
   border-radius: 5em;
   font-weight: bold;
@@ -146,8 +149,6 @@ section.features-section {
 ul.features-list {
   margin: 0;
   padding-left: .1em;
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
@@ -344,7 +345,7 @@ nav li a:hover {
 
 @media only screen and (min-width: 1080px) {
   .container {
-    width: 97%;
+    width: 93%;
     margin: 0 auto;
   }
   section {
@@ -389,10 +390,10 @@ nav li a:hover {
   }
   ul.features-list {
     display: block;
-    margin-left: 5em;
+    margin-left: 1em;
   }
   ul.features-list li {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
   ul.features-list li:before {
     width: 30px;

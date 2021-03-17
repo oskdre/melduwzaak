@@ -26,7 +26,6 @@ body {
         font-size: 1.8em;
         font-weight: bold;
         font-family: 'Swanky and Moo Moo';
-        margin
         .first {
             color: whitesmoke;
         }
@@ -74,6 +73,13 @@ section {
     // background: radial-gradient(circle, rgba(210,239,255,1) 0%, rgba(255,255,255,1) 100%);
     // padding-left: 15em;
     // z-index: 200;
+    .features-container {
+        // background: rosybrown;
+        // margin-left: 0em;
+        padding-top: 1.5em;
+    }
+
+
 }
 .about::after {
     content: "";
@@ -88,12 +94,16 @@ section {
     right: 0;
     position: absolute;
     z-index: -1;   
+    height:150%;
+    // object-fit: contain;
+    // height: 100%; width: 100%;
   }
 
 
 
 .left-col {
 
+    
     .subhead {
         text-transform: uppercase;
         font-weight: bold;
@@ -101,6 +111,8 @@ section {
         letter-spacing: .1em;
         text-align: center;
     }
+
+    
 
     .flag-container {
               
@@ -127,7 +139,7 @@ section {
         color: white;
         text-decoration: none;
         padding: .6em 1.3em;
-        margin-bottom: 2em;
+        // margin-bottom: 2em;
         font-size: 1.4em;
         border-radius: 5em;
         font-weight: bold;
@@ -153,10 +165,9 @@ section.features-section {
 ul.features-list {
     margin: 0;
     padding-left: .1em;
-    display: grid;
+    // display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
-    
 
     li {
         font-size: 1.1em;
@@ -287,6 +298,11 @@ nav {
 
 @media only screen and (min-width: 768px) {
 
+    .left-col {
+        // padding-left: 10em;
+    }
+    
+
     .mobile-menu, .mobile-menu-exit {
         display: none;
     }
@@ -302,6 +318,7 @@ nav {
         top: 0; /* Position the navbar at the top of the page */
         width: 97%; /* Full width */
         z-index: 999;
+       
     }
 
     .navbar nav {
@@ -350,8 +367,13 @@ nav {
 }
 
 @media only screen and (min-width: 1080px) {
+
+    
+
     .container {
-        width: 97%;
+        width: 93%;
+    
+        
         margin: 0 auto;
         //  padding-left: 10%;
     }
@@ -400,11 +422,11 @@ nav {
 
     ul.features-list {
         display: block;
-        margin-left: 5em;
+        margin-left: 1em;
         
 
         li {
-            font-size: 1.4em;
+            font-size: 1.6em;
 
             &:before {
                 width: 30px;
@@ -478,4 +500,12 @@ nav {
 //             top: 2em;
 //         }
 //     }
+// }
+
+// @media only screen and (min-width: 1000px) {
+
+//     .left-col {
+//         padding-left: 18em;
+//     }
+
 // }
