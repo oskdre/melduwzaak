@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meld uw zaak</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -17,7 +18,7 @@
             <nav>
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                 <ul class="primary-nav">
-                    <li class="#"><a href="#">O mnie</a></li>
+                    <li class="#" ><a href="#section-about">O mnie</a></li>
                     <li><a href="#">Zakres usług</a></li>
                     <li><a href="#">Kontakt</a></li>
                 </ul>
@@ -37,7 +38,7 @@
                 </div>
                 <h1>Zapraszamy do kontaktu</h1>
                 <div class="about-cta">
-                    <a href="#" class="primary-cta">Wyślij Wiadomość</a>
+                    <a href="#section-contact" class="primary-cta">Wyślij Wiadomość</a>
                 </div>
             </div>
             <!-- <img src="images/illustration.svg" class="about-img" alt="Illustration"> -->
@@ -52,25 +53,20 @@
                     <li>Prawo pracy</li>
                 </ul>
             </div>
-            </div>
-            
-        </div>
-     
-            
-        
+            </div>      
+        </div>       
     </section>
 
-    <section class="features-section">
-        <!-- <div class="container">
-            <ul class="features-list">
-                <li>Unlimited tasks</li>
-                <li>SMS Task Reminders</li>
-                <li>Confetti Explosions upon Task Completions</li>
-                <li>Social Media Announcements</li>
-                <li>Real Time Collaboration</li>
-                <li>Other awesome features</li>
-            </ul> -->
-                <!-- <img src="images/holding-phone.jpg" alt="Man holding phone"> -->
+    <section class="features-section" id="section-about">
+            <div class="container" >
+             <h1>O mnie</h1>   
+          <ul>
+            <li>
+                <img src="images/edyta.png" alt="Person">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat gravida lobortis. Donec viverra nunc a neque suscipit, quis fringilla mauris porttitor. Integer gravida nulla vel arcu iaculis tristique. In ligula libero, mollis in magna in, laoreet ultrices nisi. Donec non sem accumsan, ultricies felis et, luctus eros. Nulla facilisi. Nulla facilisi. Sed ullamcorper nulla mauris, eu efficitur nunc iaculis imperdiet. Proin ornare est ac aliquam volutpat. Duis eleifend a lacus vitae posuere.</blockquote>
+                <cite>Edyta Drescher-Krauczunas</cite>
+            </li>
+            </ul>
         </div>
     </section>
 
@@ -96,7 +92,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="section-contact">
             <div class="container">
                 <div class="contact-left">
                     <h2>Contact</h2>
@@ -118,6 +114,7 @@
                 </div>
             </div>
     </section>
+     
 <script>
     const mobileBtn = document.getElementById('mobile-cta');
     nav = document.querySelector('nav')
@@ -132,6 +129,32 @@ mobileBtnExit.addEventListener('click', ()=> {
 })
 
 </script>
-
+   <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+            console.log('ok');
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 650, function(){
+                console.log('ok');
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </body>
 </html>

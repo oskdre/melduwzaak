@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Blinker:wght@100;600&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Josefin+Slab:wght@500&family=Manrope:wght@300&family=Rokkitt:wght@200&family=Secular+One&display=swap");
 :root {
   --primary-color: #007AF3;
   --light-whatsup: #25D366;
@@ -75,12 +76,37 @@ section {
 }
 
 .about .features-container {
+  -webkit-animation: 2s fadeIn;
+          animation: 2s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: hidden;
   padding-top: 1.5em;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .about::after {
   content: "";
-  background: url("../images/nlphoo.jpg");
+  background: url("../images/nlphoo-mobile.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -136,14 +162,51 @@ section {
   margin-right: auto;
 }
 
+.left-col .primary-cta:hover {
+  background: #2d5db6;
+}
+
 .about-img {
   width: 70%;
   margin-top: 3em;
 }
 
 section.features-section {
+  font-family: 'Josefin Slab';
+  font-size: 1.0em;
   background: #20272E;
-  color: white;
+  height: 40em;
+  padding-bottom: 28em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.features-section h1 {
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  font-family: 'Josefin Slab';
+}
+
+section.features-section li {
+  background: #4e6379;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+section.features-section li img {
+  width: 10em;
+  height: 10em;
+  border: 10px solid #4e6379;
+  border-radius: 10%;
 }
 
 ul.features-list {
@@ -168,18 +231,19 @@ ul.features-list li:before {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url("../images/bullet.svg");
+  background-image: url("../images/check.svg");
   background-size: contain;
   margin-right: .5em;
 }
 
 .features-section img {
-  display: none;
+  float: none;
 }
 
 .testimonials-section {
   background: var(--primary-color);
   color: white;
+  padding-bottom: 30em;
 }
 
 .testimonials-section li {
@@ -197,6 +261,27 @@ ul.features-list li:before {
   border: 5px solid #006BD6;
   border-radius: 50%;
   margin-top: -4.5em;
+}
+
+.features-section {
+  background: var(--primary-color);
+  color: white;
+}
+
+.features-section li {
+  background: #4e6379;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.features-section li img {
+  width: 80%;
+  height: 100%;
+  border: 10px solid #4e6379;
+  border-radius: 10%;
 }
 
 h2 {
@@ -277,6 +362,21 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  .about::after {
+    content: "";
+    background: url("../images/nlphoo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    height: 150%;
+  }
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
@@ -344,14 +444,19 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 1080px) {
+  section.features-section {
+    padding-bottom: 20em;
+  }
   .container {
     width: 93%;
     margin: 0 auto;
   }
   section {
     padding: 10em 4em;
+    max-width: 100%;
   }
   .about .container {
+    height: 40em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -362,6 +467,29 @@ nav li a:hover {
   }
   .about .container .features-container {
     padding: 2.3em;
+    -webkit-animation: 2s fadeIn;
+            animation: 2s fadeIn;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   .about .container .left-col {
     margin: 3em 3em 0 5em;
@@ -370,10 +498,10 @@ nav li a:hover {
     display: inline-block;
   }
   .about .container .left-col .flag-container .holland-flag {
-    width: 10%;
+    width: 12%;
   }
   .about .container .left-col h1 {
-    font-size: 3em;
+    font-size: 4em;
     width: 90%;
   }
   .about-img {
@@ -393,7 +521,7 @@ nav li a:hover {
     margin-left: 1em;
   }
   ul.features-list li {
-    font-size: 1.6em;
+    font-size: 1.9em;
   }
   ul.features-list li:before {
     width: 30px;
@@ -403,11 +531,12 @@ nav li a:hover {
     position: relative;
   }
   .features-section img {
-    display: block;
-    position: absolute;
-    right: 0;
-    width: 350px;
-    bottom: -2em;
+    float: left;
+  }
+  .features-section {
+    background: var(--primary-color);
+    color: white;
+    padding-bottom: 0em;
   }
   .testimonials-section ul {
     display: -webkit-box;
@@ -417,8 +546,23 @@ nav li a:hover {
   .testimonials-section ul li {
     margin: 0 1em;
   }
+  .features-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .features-section ul li {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.5em;
+  }
+  .features-section ul li img {
+    width: 15em;
+    height: 15em;
+  }
   .contact-section {
     position: relative;
+    font-weight: bold;
   }
   .contact-section .container {
     display: -webkit-box;

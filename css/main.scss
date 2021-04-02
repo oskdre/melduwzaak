@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Blinker:wght@100;600&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Josefin+Slab:wght@500&family=Manrope:wght@300&family=Rokkitt:wght@200&family=Secular+One&display=swap');
 :root {
     --primary-color: #007AF3;
     --light-whatsup: #25D366;
@@ -65,15 +65,30 @@ ul {
 
 section {
     padding: 5em 2em;
+    
 }
 
 .about {
     text-align: center;
+
+// width:486em;
     // background: rgb(210,239,255);
     // background: radial-gradient(circle, rgba(210,239,255,1) 0%, rgba(255,255,255,1) 100%);
     // padding-left: 15em;
     // z-index: 200;
-    .features-container {
+    .features-container { animation: 2s fadeIn;
+        animation-fill-mode: forwards;            
+        visibility: hidden;
+
+        @keyframes fadeIn {
+            0% {
+              opacity: 0;
+            }
+            100% {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
         // background: rosybrown;
         // margin-left: 0em;
         padding-top: 1.5em;
@@ -83,7 +98,7 @@ section {
 }
 .about::after {
     content: "";
-    background: url('../images/nlphoo.jpg');
+    background: url('../images/nlphoo-mobile.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -132,6 +147,7 @@ section {
         text-align: center;
         margin-left: auto;
            margin-right: auto 
+           
     }
 
     .primary-cta {
@@ -146,8 +162,14 @@ section {
         display: inline-block;
         display: block;
            margin-left: auto;
-           margin-right: auto 
+           margin-right: auto ;
+
+           &:hover {
+            background: rgb(45, 93, 182);
+        }
+           
     }
+    
 
     
 }
@@ -158,8 +180,40 @@ section {
 }
 
 section.features-section {
+    font-family: 'Josefin Slab';   
+    font-size: 1.0em;
     background: #20272E;
-    color: white;
+    height: 40em;
+    padding-bottom: 28em;
+    display: flex;
+    justify-content: center;
+    
+  h1 {
+        font-size: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        font-family: 'Josefin Slab';
+  }
+   
+        li {
+            background: #4e6379;
+            text-align: center;
+            // padding: 2em 1em;
+            width: 80%;
+            height: 100%;
+            margin: 0 auto 5em auto;
+            border-radius: 1em;
+    
+            img {
+                width: 10em;
+                height: 10em;
+                border: 10px solid #4e6379;
+                border-radius: 10%;
+                // margin-top: -4.5em;
+            }
+        }
+        
 }
 
 ul.features-list {
@@ -183,7 +237,7 @@ ul.features-list {
             position: absolute;
             width: 20px;
             height: 20px;
-            background-image: url('../images/bullet.svg');
+            background-image: url('../images/check.svg');
             background-size: contain;
             margin-right: .5em;
         }
@@ -191,13 +245,16 @@ ul.features-list {
 }
 
 .features-section img {
-    display: none;
+    float: none;
+  
+    
 }
 
-.testimonials-section {
+.testimonials-section  {
     background: var(--primary-color);
     color: white;
-
+    // height: 90vh;
+    padding-bottom: 30em;
     li {
         background: #006BD6;
         text-align: center;
@@ -205,7 +262,6 @@ ul.features-list {
         width: 80%;
         margin: 0 auto 5em auto;
         border-radius: 1em;
-
         img {
             width: 5em;
             height: 5em;
@@ -216,6 +272,32 @@ ul.features-list {
     }
 
 }
+
+.features-section  {
+    background: var(--primary-color);
+    color: white;
+
+    li {
+        background: #4e6379;
+        text-align: center;
+        // padding: 2em 1em;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto 5em auto;
+        border-radius: 1em;
+
+        img {
+            width: 80%;
+            height: 100%;
+            border: 10px solid #4e6379;
+            border-radius: 10%;
+            // margin-top: -4.5em;
+        }
+    }
+
+}
+
+
 
 h2 {
     font-size: 2em;
@@ -301,7 +383,25 @@ nav {
     .left-col {
         // padding-left: 10em;
     }
-    
+
+
+    .about::after {
+        content: "";
+        background: url('../images/nlphoo.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+        height:150%;
+        // object-fit: contain;
+        // height: 100%; width: 100%;
+      }
 
     .mobile-menu, .mobile-menu-exit {
         display: none;
@@ -368,7 +468,9 @@ nav {
 
 @media only screen and (min-width: 1080px) {
 
-    
+    section.features-section {
+        padding-bottom: 20em;
+    }
 
     .container {
         width: 93%;
@@ -380,16 +482,35 @@ nav {
 
     section {
         padding: 10em 4em;
+        // width: 971px;
+        max-width:100%
     }
 
     
 
     .about .container {
+        height: 40em;
         display: flex;
         justify-content: space-between;
         text-align: left;
         .features-container {
             padding: 2.3em;
+            // width: 60px;
+            // height: 60px;  
+            animation: 2s fadeIn;
+            animation-fill-mode: forwards;            
+            visibility: hidden;
+
+            @keyframes fadeIn {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  visibility: visible;
+                  opacity: 1;
+                }
+              }
+
         }
 
         .left-col {
@@ -398,12 +519,15 @@ nav {
               
                 display: inline-block;
                 .holland-flag {
-                   width: 10%;
+                   width: 12%;
                 }
             }
+
+            
             h1 {
-                font-size: 3em;
+                font-size: 4em;
                 width: 90%;
+                
             }
         }
     }
@@ -418,15 +542,14 @@ nav {
     }
     .primary-cta {
         margin-right: 1em;
+        
     }
 
     ul.features-list {
         display: block;
         margin-left: 1em;
-        
-
         li {
-            font-size: 1.6em;
+            font-size: 1.9em;
 
             &:before {
                 width: 30px;
@@ -437,15 +560,38 @@ nav {
 
     .features-section {
         position: relative;
+        img {
+            float: left; 
+        }
     }
 
-    .features-section img {
-        display: block;
-        position: absolute;
-        right: 0;
-        width: 350px;
-        bottom: -2em;
+    
+
+    .features-section  {
+        background: var(--primary-color);
+        color: white;
+        padding-bottom: 0em;
+        // li {
+        //     background: #4e6379;
+        //     text-align: center;
+        //     // padding: 2em 1em;
+        //     width: 80%;
+        //     height: 100%;
+        //     margin: 0 auto 5em auto;
+        //     border-radius: 1em;
+    
+        //     img {
+        //         width: 15em;
+        //         height: 15em;
+        //         border: 10px solid #4e6379;
+        //         border-radius: 10%;
+        //         // margin-top: -4.5em;
+        //     }
+        // }
+    
     }
+
+    
 
     .testimonials-section ul {
         display: flex;
@@ -455,9 +601,25 @@ nav {
         }
     }
 
+    .features-section ul {
+        display: flex;
+        
+        li {
+            // margin: 0 1em;
+            margin: 0 auto;
+            width: 60%;
+            font-size: 1.5em;
+            img {
+                width: 15em;
+                height: 15em;
+            }
+            
+        }
+    }
+
     .contact-section {
         position: relative;
-
+        font-weight: bold;
         .container {
             display: flex;
             

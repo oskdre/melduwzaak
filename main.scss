@@ -101,7 +101,7 @@ section {
 
 section.features-section {
     background: #20272E;
-    color: white;
+    // color: white;
 }
 
 ul.features-list {
@@ -130,7 +130,9 @@ ul.features-list {
 }
 
 .features-section img {
-    display: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 }
 
 .testimonials-section {
@@ -294,7 +296,7 @@ nav {
 
 @media only screen and (min-width: 1080px) {
     .container {
-        width: 1080px;
+        width: 2080px;
         // margin: 0 auto;
     }
 
@@ -345,15 +347,18 @@ nav {
     }
 
     .features-section {
-        position: relative;
+        // position: relative;
     }
 
-    .features-section img {
-        display: block;
-        position: absolute;
-        right: 0;
-        width: 350px;
-        bottom: -2em;
+    // .features-section img {
+    //     display: block;
+    //     position: absolute;
+    //     right: 0;
+    //     width: 350px;
+    //     bottom: -2em;
+    // }
+    .picture-description{
+        background: #007AF3;
     }
 
     .testimonials-section ul {
@@ -385,27 +390,27 @@ nav {
     }
 }
 
-@media only screen and (min-width: 1450px) {
-    .features-section {
+// @media only screen and (min-width: 1450px) {
+//     .features-section {
 
-        &:before {
-            content: '';
-            position: absolute;
-            width: 10%;
-            height: 20em;
-            background: var(--primary-color);
-            left: 0;
-            top: -4em;
-        }
+//         &:before {
+//             content: '';
+//             position: absolute;
+//             width: 10%;
+//             height: 20em;
+//             background: var(--primary-color);
+//             left: 0;
+//             top: -4em;
+//         }
 
-        &:after {
-            content: '';
-            position: absolute;
-            width: 200px;
-            height: 20em;
-            background: url('../images/dots.svg') no-repeat;
-            left: 4.5em;
-            top: 2em;
-        }
-    }
-}
+//         &:after {
+//             content: '';
+//             position: absolute;
+//             width: 200px;
+//             height: 20em;
+//             background: url('../images/dots.svg') no-repeat;
+//             left: 4.5em;
+//             top: 2em;
+//         }
+//     }
+// }
