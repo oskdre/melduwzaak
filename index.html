@@ -1,160 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Meld uw zaak</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-    <div class="navbar">
-        <div class="container">
-            <a class="logo" href="index.html"> <span class="first">Meld</span><span class="middle"> uw</span><span class="last"> zaak</span></a>
-            
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-
-            <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
-                <ul class="primary-nav">
-                    <li class="#" ><a href="#section-about">O mnie</a></li>
-                    <li><a href="#">Zakres usług</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-                <ul class="secondary-nav">
-                    <li class="whatsapp-cta"><a href="#">WhatsApp</a></li>
-                </ul>
-            </nav>
-        </div>
+  </head>
+  <body>
+    <div class="navbar" id="navbar-section">
+      <div class="container">
+        <a class="logo" href="#info">
+          <span class="first">Meld</span><span class="middle"> uw</span
+          ><span class="last"> zaak</span></a
+        >
+      
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="Open Navigation">
+        </img>
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="Close Navigation"
+          />
+          <ul class="primary-nav">
+            <li class="#"><a href="#about-section">O mnie</a></li>
+            <li><a href="#services-section">Zakres usług</a></li>
+            <li><a href="#section-contact">Kontakt</a></li>
+          </ul>
+          <ul class="secondary-nav">
+            <li class="whatsapp-cta"><a href="#">WhatsApp</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
-    <section class="about">
+    <section class="info" id="info">
+      <div class="container">
+        <div class="left-col">
+          <div class="flag-container">
+            <p class="subhead">
+              Oferujemy wsparcie dla Polaków przebywających na terenie Holandii
+              lub planujących wyjazd
+            </p>
+            <img class="holland-flag" src="images/nl.svg" alt="" />
+          </div>
+          <h1>Zapraszamy do kontaktu</h1>
+          <div class="info-cta">
+            <a href="#section-contact" class="sendbutton">Wyślij Wiadomość</a>
+          </div>
+        </div>
         <div class="container">
-            <div class="left-col">
-                <div class="flag-container">
-                <p class="subhead">Oferujemy wsparcie dla Polaków przebywających na terenie Holandii lub planujących wyjazd</p>
-                <img class="holland-flag" src="images/nl.svg" alt="">
-                </div>
-                <h1>Zapraszamy do kontaktu</h1>
-                <div class="about-cta">
-                    <a href="#section-contact" class="primary-cta">Wyślij Wiadomość</a>
-                </div>
-            </div>
-            <!-- <img src="images/illustration.svg" class="about-img" alt="Illustration"> -->
-            <div class="container">
-                <div class="features-container">
-                <ul class="features-list">
-                    <li>Sprawy podatkowe</li>
-                    <li>Pomoc w znalezieniu pracy</li>
-                    <li>Wsparce dla rodzin</li>
-                    <li>Odszkodowania</li>
-                    <li>Asysta</li>
-                    <li>Prawo pracy</li>
-                </ul>
-            </div>
-            </div>      
-        </div>       
+          <div class="features-container">
+            <ul class="features-list">
+              <li>Sprawy podatkowe</li>
+              <li>Pomoc w znalezieniu pracy</li>
+              <li>Wsparce dla rodzin</li>
+              <li>Odszkodowania</li>
+              <li>Asysta</li>
+              <li>Prawo pracy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="features-section" id="section-about">
-            <div class="container" >
-             <h1>O mnie</h1>   
-          <ul>
-            <li>
-                <img src="images/edyta.png" alt="Person">
-                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat gravida lobortis. Donec viverra nunc a neque suscipit, quis fringilla mauris porttitor. Integer gravida nulla vel arcu iaculis tristique. In ligula libero, mollis in magna in, laoreet ultrices nisi. Donec non sem accumsan, ultricies felis et, luctus eros. Nulla facilisi. Nulla facilisi. Sed ullamcorper nulla mauris, eu efficitur nunc iaculis imperdiet. Proin ornare est ac aliquam volutpat. Duis eleifend a lacus vitae posuere.</blockquote>
-                <cite>Edyta Drescher-Krauczunas</cite>
-            </li>
-            </ul>
-        </div>
+    <section class="about-section" id="about-section">
+      <div class="container">
+        <h1>O mnie</h1>
+        <ul>
+          <li>
+            <img src="images/edyta.png" alt="Person" />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              consequat gravida lobortis. Donec viverra nunc a neque suscipit,
+              quis fringilla mauris porttitor. Integer gravida nulla vel arcu
+              iaculis tristique. In ligula libero, mollis in magna in, laoreet
+              ultrices nisi. Donec non sem accumsan, ultricies felis et, luctus
+              eros. Nulla facilisi. Nulla facilisi. Sed ullamcorper nulla
+              mauris, eu efficitur nunc iaculis imperdiet. Proin ornare est ac
+              aliquam volutpat. Duis eleifend a lacus vitae posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              consequat gravida lobortis. Donec viverra nunc a neque suscipit,
+              quis fringilla mauris porttitor. Integer gravida nulla vel arcu
+              iaculis tristique. In ligula libero, mollis in magna in, laoreet
+              ultrices nisi. Donec non sem accumsan, ultricies felis et, luctus
+              eros. Nulla facilisi. Nulla facilisi. Sed ullamcorper nulla
+              mauris, eu efficitur nunc iaculis imperdiet. Proin ornare est ac
+              aliquam volutpat. Duis eleifend a lacus vitae posuere.
+            </blockquote>
+            <cite>Edyta Drescher-Krauczunas</cite>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="testimonials-section">
-        <div class="container">
-            <ul>
-                <li>
-                    <img src="images/person.jpg" alt="Person">
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat gravida lobortis. Donec viverra nunc a neque suscipit, quis fringilla mauris porttitor. Integer gravida nulla vel arcu iaculis tristique. In ligula libero, mollis in magna in, laoreet ultrices nisi. Donec non sem accumsan, ultricies felis et, luctus eros. Nulla facilisi. Nulla facilisi. Sed ullamcorper nulla mauris, eu efficitur nunc iaculis imperdiet. Proin ornare est ac aliquam volutpat. Duis eleifend a lacus vitae posuere.</blockquote>
-                    <cite>- Jane Doe</cite>
-                </li>
-                <li>
-                    <img src="images/person.jpg" alt="Person">
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat gravida lobortis. Donec viverra nunc a neque suscipit, quis fringilla mauris porttitor. Integer gravida nulla vel arcu iaculis tristique. In ligula libero, mollis in magna in, laoreet ultrices nisi. Donec non sem accumsan, ultricies felis et, luctus eros. Nulla facilisi. Nulla facilisi. Sed ullamcorper nulla mauris, eu efficitur nunc iaculis imperdiet. Proin ornare est ac aliquam volutpat. Duis eleifend a lacus vitae posuere.</blockquote>
-                    <cite>- Jane Doe</cite>
-                </li>
-                <li>
-                    <img src="images/person.jpg" alt="Person">
-                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat gravida lobortis. Donec viverra nunc a neque suscipit, quis fringilla mauris porttitor. Integer gravida nulla vel arcu iaculis tristique. In ligula libero, mollis in magna in, laoreet ultrices nisi. Donec non sem accumsan, ultricies felis et, luctus eros. Nulla facilisi. Nulla facilisi. Sed ullamcorper nulla mauris, eu efficitur nunc iaculis imperdiet. Proin ornare est ac aliquam volutpat. Duis eleifend a lacus vitae posuere.</blockquote>
-                    <cite>- Jane Doe</cite>
-                </li>
-            </ul>
-        </div>
+    <section class="services-section" id="services-section">
+        <h1>Zakres Usług</h1> 
+      <div class="container">
+  <div class="services-left">
+    <ul class="check-list">
+      <li>Sprawy podatkowe</li>
+      <li>Pomoc w znalezieniu pracy</li>
+      <li>Kredyty hipoteczne</li>
+      <li>Asysta</li>
+      <li>Ciąża i poród</li>
+      <li>Rozliczenie podatku w holandi</li>
+    </ul>
+  </div>
+  <div class="services-right">
+      <ul class="check-list">
+          <li>Odszkodowania</li>
+          <li>Asysta</li>
+          <li>Prawo pracy</li>
+          <li>Wsparcie dla pełnoletnich</li>
+          <li>Pomoc socjalna w Holandii</li>
+          <li>Reintegracja zawodowa</li>
+          <li>odszkodowania</li>
+      </ul>
+    </div>
+      </div>
     </section>
 
     <section class="contact-section" id="section-contact">
-            <div class="container">
-                <div class="contact-left">
-                    <h2>Contact</h2>
-                    <form action="">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name">
+      <div class="container">
+        <div class="contact-left"id="messageform">
+          <h2 >Kontakt</h2>
+          <form action="">
+            <label for="name">Email</label>
+            <input type="text" id="email" name="email" placeholder="Twój email" />
+            <label for="name">Telefon *</label>
+            <input type="text" id="telefon" name="telefon" placeholder="Opcjonalnie" />
 
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email">
+            <label for="message">Wiadomość</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
 
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-                        <input type="submit" class="send-message-cta" value="Send message">
-                    </form>
-                </div>
-                <div class="contact-right">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9875.024367339374!2d19.47124184348614!3d51.77406600285263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcb2606d6eb55%3A0xf43e565ff21e949f!2zU3RlZmFuYSBKYXJhY3phIDU1LCA5MC0wMDEgxYHDs2TFug!5e0!3m2!1sen!2spl!4v1615557740041!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Wyślij wiadomość"
+            />
+            
+          </form>
+          
+        </div>
+        <div class="contact-right">
+            <h1 class="contact-message">Rozwiej wątpliwości związane z pobytem w Holandii<br><br> Skontaktuj się z nami w dogodny dla Ciebie sposób.</h1> 
+            <div><a href="#" class="whatsapp-button">WhatsApp</a></div>
+        </div>
+        
+      </div>
     </section>
-     
-<script>
-    const mobileBtn = document.getElementById('mobile-cta');
-    nav = document.querySelector('nav')
-    mobileBtnExit = document.getElementById('mobile-exit');
 
-mobileBtn.addEventListener('click', ()=> {
-    nav.classList.add('menu-btn')
-})
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
 
-mobileBtnExit.addEventListener('click', ()=> {
-    nav.classList.remove('menu-btn')
-})
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
 
-</script>
-   <script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-            console.log('ok');
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-        
-              // Store hash
-              var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("a").on("click", function(event) {
+          console.log("ok");
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
                 scrollTop: $(hash).offset().top
-              }, 650, function(){
-                console.log('ok');
-                // Add hash (#) to URL when done scrolling (default click behavior)
+              },
+              650,
+              function() {
+                console.log("ok");
                 window.location.hash = hash;
-              });
-            } // End if
-          });
+              }
+            );
+          } 
         });
-        </script>
-<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-</body>
+      });
+    </script>
+    <div>
+      Icons made by
+      <a
+        href="https://www.flaticon.com/authors/pixel-perfect"
+        title="Pixel perfect"
+        >Pixel perfect</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+  </body>
 </html>
