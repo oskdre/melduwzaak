@@ -178,7 +178,7 @@ label {
     li {
         font-size: 1.1em;
         margin-bottom: 1em;
-        margin-left: 2em;
+        margin-left: 1em;
         font-weight: bold;
         position: relative;
         z-index: 300;
@@ -226,7 +226,7 @@ section.about-section {
     font-family: 'Ubuntu';
     font-size: 0.9em;
     font-weight: 300;
-    background: #20272E;
+    background: rgb(63, 63, 63);
     height: 47em;
     padding-bottom: 28em;
     display: flex;
@@ -234,27 +234,28 @@ section.about-section {
     color: white;
     h1 {
         // text-transform: uppercase;
-        font-size: 1.5em;
+        margin-bottom: 0em;
+        font-size: 2.9em;
         margin-left: 38%;
         // margin-right: 50%;
         width: 200px;
-        font-family: 'Poppins';
+        font-family: 'Swanky and Moo Moo';
     }
 
     li {
-        background: #4e6379;
+        background: #646464;
         text-align: center;
         width: 80%;
         height: 100%;
         margin: 0 auto 5em auto;
         border-radius: 1em;
-        border:2px solid rgb(46, 45, 45);
+        // border:2px solid rgb(46, 45, 45);
         blockquote{
                margin: 1em; 
         }
         img {
             text-align: center;
-            border:2px solid #57708a;
+            // border:2px solid rgb(46, 45, 45);
             width: 10em;
             height: 10em;
             margin-top: 10px;
@@ -272,6 +273,11 @@ section.about-section {
     background: var(--primary-color);
     color: white;
     padding-bottom: 17em;
+
+    h1{
+        text-transform: uppercase;
+    }
+   
     .container {
         font-family: 'Poppins';
     .check-list {
@@ -298,7 +304,7 @@ section.about-section {
         height: 11px;
         border-width: 0 2px 2px 0;
         border-style: solid;
-        border-color: #00a8a8;
+        border-color: #17ec5e;
         transform-origin: bottom left;
         transform: rotate(45deg);
     }
@@ -560,7 +566,7 @@ nav {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
-        opacity: 0.2;
+        opacity: 0.32;
         top: 0;
         left: 0;
         bottom: 0;
@@ -573,8 +579,9 @@ nav {
 
     .services-section {
         h1{
+            text-transform: uppercase;
             text-align: center;
-            font-size: 3em;
+            font-size: 2em;
         }
         .container {
             .services-left {
@@ -583,6 +590,34 @@ nav {
             font-size: 2em;
             display: flex;
         }
+
+        .container{
+            
+                .check-list li {
+                    position: relative;
+                    list-style-type: none;
+                    padding-left: 2.8rem;
+                    margin-bottom: 0.5rem;
+                  }
+            
+                  .check-list li:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: -2px;
+                    width: 10px;
+                    height: 22px;
+                    border-width: 0 5px 5px 0;
+                    border-style: solid;
+                    border-color: #17ec5e;
+                    transform-origin: bottom left;
+                    transform: rotate(45deg);
+                }
+            
+        }
+
+        
         
     }
 
@@ -623,20 +658,23 @@ nav {
     }
     // full web end
     
+        
+
     // 1 sekcja info 
     .info .container {
         height: 40em;
         display: flex;
         justify-content: space-between;
         text-align: left;
-
+        margin-left: 10%;
+        margin-right: 10%;
         .features-container {
-            padding: 2.3em;
-            
+            font-size: 1.2em;
+            padding-top: 10%;
             animation: 2s fadeIn;
             animation-fill-mode: forwards;
             visibility: hidden;
-
+            
             @keyframes fadeIn {
                 0% {
                     opacity: 0;
@@ -649,21 +687,17 @@ nav {
             }
         }
         .left-col {
-            margin: 3em 3em 0 5em;
+            margin: 3em 4em 0 6em;
 
             .flag-container {
-
                 display: inline-block;
-
                 .holland-flag {
                     width: 12%;
                 }
             }
-
-
             h1 {
-                font-size: 4em;
-                width: 90%;
+                font-size: 3.7em;
+                // width: 90%;
 
             }
         }

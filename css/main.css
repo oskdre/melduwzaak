@@ -170,7 +170,7 @@ label {
 .features-list li {
   font-size: 1.1em;
   margin-bottom: 1em;
-  margin-left: 2em;
+  margin-left: 1em;
   font-weight: bold;
   position: relative;
   z-index: 300;
@@ -207,7 +207,7 @@ section.about-section {
   font-family: 'Ubuntu';
   font-size: 0.9em;
   font-weight: 300;
-  background: #20272E;
+  background: #3f3f3f;
   height: 47em;
   padding-bottom: 28em;
   display: -webkit-box;
@@ -220,20 +220,20 @@ section.about-section {
 }
 
 section.about-section h1 {
-  font-size: 1.5em;
+  margin-bottom: 0em;
+  font-size: 2.9em;
   margin-left: 38%;
   width: 200px;
-  font-family: 'Poppins';
+  font-family: 'Swanky and Moo Moo';
 }
 
 section.about-section li {
-  background: #4e6379;
+  background: #646464;
   text-align: center;
   width: 80%;
   height: 100%;
   margin: 0 auto 5em auto;
   border-radius: 1em;
-  border: 2px solid #2e2d2d;
 }
 
 section.about-section li blockquote {
@@ -242,7 +242,6 @@ section.about-section li blockquote {
 
 section.about-section li img {
   text-align: center;
-  border: 2px solid #57708a;
   width: 10em;
   height: 10em;
   margin-top: 10px;
@@ -254,6 +253,10 @@ section.about-section li img {
   background: var(--primary-color);
   color: white;
   padding-bottom: 17em;
+}
+
+.services-section h1 {
+  text-transform: uppercase;
 }
 
 .services-section .container {
@@ -284,7 +287,7 @@ section.about-section li img {
   height: 11px;
   border-width: 0 2px 2px 0;
   border-style: solid;
-  border-color: #00a8a8;
+  border-color: #17ec5e;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transform: rotate(45deg);
@@ -500,7 +503,7 @@ nav li a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    opacity: 0.2;
+    opacity: 0.32;
     top: 0;
     left: 0;
     bottom: 0;
@@ -510,8 +513,9 @@ nav li a:hover {
     height: 150%;
   }
   .services-section h1 {
+    text-transform: uppercase;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
   }
   .services-section .container {
     font-size: 2em;
@@ -521,6 +525,28 @@ nav li a:hover {
   }
   .services-section .container .services-left {
     margin-right: 18%;
+  }
+  .services-section .container .check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .services-section .container .check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 10px;
+    height: 22px;
+    border-width: 0 5px 5px 0;
+    border-style: solid;
+    border-color: #17ec5e;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .contact-section .contact-right .contact-message {
     display: -webkit-box;
@@ -558,9 +584,12 @@ nav li a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .info .container .features-container {
-    padding: 2.3em;
+    font-size: 1.2em;
+    padding-top: 10%;
     -webkit-animation: 2s fadeIn;
             animation: 2s fadeIn;
     -webkit-animation-fill-mode: forwards;
@@ -586,7 +615,7 @@ nav li a:hover {
     }
   }
   .info .container .left-col {
-    margin: 3em 3em 0 5em;
+    margin: 3em 4em 0 6em;
   }
   .info .container .left-col .flag-container {
     display: inline-block;
@@ -595,8 +624,7 @@ nav li a:hover {
     width: 12%;
   }
   .info .container .left-col h1 {
-    font-size: 4em;
-    width: 90%;
+    font-size: 3.7em;
   }
   .info-cta {
     display: -webkit-box;
