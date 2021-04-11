@@ -256,6 +256,7 @@ section.about-section li img {
 .services-section {
   background: #F2F2F2;
   color: #080808;
+  padding-bottom: 5em;
 }
 
 .services-section h1 {
@@ -267,7 +268,7 @@ section.about-section li img {
 }
 
 .services-section .container .check-list {
-  font-size: 0.9em;
+  font-size: 1.2em;
   display: inline;
   margin: 0;
   padding-left: 1.2rem;
