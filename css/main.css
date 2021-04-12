@@ -531,8 +531,8 @@ nav li a:hover {
   }
   .navbar nav li.whatsapp-cta a {
     padding-bottom: 0.5em;
-    color: var(--light-whatsup);
-    border: 3px solid var(--light-whatsup);
+    color: #000000;
+    border: 2px solid #000000;
     font-weight: bold;
     border-radius: 5em;
     margin-top: -.2em;
