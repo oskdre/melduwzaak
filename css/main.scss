@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Josefin+Slab:wght@500&family=Manrope:wght@300&family=Rokkitt:wght@200&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
 
 :root {
     --primary-color: #007AF3;
@@ -11,7 +12,7 @@
 }
 
 body {
-    background: #F2F2F2;
+    background: rgb(242, 242, 242);
     margin: 0;
     font-family: 'Blinker';
 }
@@ -47,10 +48,10 @@ label {
 // nawigacja 
 
 .navbar {
-    background: #21468B;
+    background: rgb(242, 242, 242);
     padding: 1.0em 1em 1.0em 3em;
     font-family: 'Poppins';
-
+    
     .logo {
         text-decoration: none;
         color: whitesmoke;
@@ -59,11 +60,11 @@ label {
         font-family: 'Swanky and Moo Moo';
 
         .first {
-            color: whitesmoke;
+            color: var(--primary-color);
         }
 
         .middle {
-            color: whitesmoke;
+            color: var(--primary-color);
         }
 
         .last {
@@ -223,9 +224,9 @@ label {
 
 // 2 sekcja about 
 section.about-section {
-    font-family: 'Ubuntu';
+    font-family: 'Titillium Web';
     font-size: 0.9em;
-    font-weight: 300;
+    font-weight: 400;
     // background: rgb(63, 63, 63); to_recover
     background: #F2F2F2;
     height: 47em;
@@ -233,33 +234,38 @@ section.about-section {
     display: flex;
     justify-content: center;
     color: white;
-    padding-bottom: 8em;
+    padding-bottom: 13em;
     h1 {
-        
         // text-transform: uppercase;
-        color: #646464;
+        // text-transform: uppercase;
+        color: #000000;
         margin-bottom: 0em;
-        font-size: 2.9em;
+        font-size: 2.3em;
+        
         margin-left: 38%;
         // margin-right: 50%;
         width: 200px;
-        font-family: 'Swanky and Moo Moo';
+        font-family: 'Titillium Web';
+        font-weight: bold;
+        text-shadow: 3px 2px 0 rgb(202, 202, 202);
     }
 
     li {
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-        background: #646464;
+        // box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        background: #F2F2F2;
         text-align: center;
         width: 80%;
         height: 100%;
         margin: 0 auto 5em auto;
         border-radius: 1em;
+        color: #000000;
         // border:2px solid rgb(46, 45, 45);
         blockquote{
                margin: 1em; 
         }
         img {
             text-align: center;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
             // border:2px solid rgb(46, 45, 45);
             width: 10em;
             height: 10em;
@@ -280,16 +286,20 @@ section.about-section {
     // padding-bottom: 17em;
     padding-bottom: 5em;
     h1{
+        font-family: "Titillium Web";
+        text-align: center;
         text-transform: uppercase;
+        text-shadow: 3px 2px 0 rgb(202, 202, 202);
     }
    
     .container {
-        font-family: 'Poppins';
+        font-family: "Titillium Web";
     .check-list {
-        font-size: 1.2em;
+        font-size: 1.3em;
         display: inline;
         margin: 0;
         padding-left: 1.2rem;
+        // text-shadow: 3px 3px 0 rgb(202, 202, 202);
       }
 
       .check-list li {
@@ -307,9 +317,9 @@ section.about-section {
         top: -2px;
         width: 5px;
         height: 11px;
-        border-width: 0 2px 2px 0;
+        border-width: 0 3px 3px 0;
         border-style: solid;
-        border-color: #17ec5e;
+        border-color:  var(--primary-color);
         transform-origin: bottom left;
         transform: rotate(45deg);
     }
@@ -414,12 +424,14 @@ nav {
     position: relative;
     font-weight: bold;
     padding-bottom: 4em;
-
+    
     .contact-left {
         // padding-bottom: 0em;
         // margin-bottom: 0em;
+        font-family: "Titillium Web";
+        font-weight: 600;
         .send-message-cta{
-            background: #646464;
+            background: var(--primary-color);
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 1em;
@@ -441,7 +453,7 @@ nav {
     }
 
     h2 {
-        font-family: "Ubuntu";
+        font-family: "Titillium Web";
         font-weight: 500;
     }
 
@@ -450,6 +462,8 @@ nav {
             display: none;
             margin: 0em;
             padding: 0em;
+            
+            
         }
         
         .whatsapp-button {
@@ -490,9 +504,7 @@ nav {
         font-weight: bold;
         text-rendering: optimizeLegibility;
         text-align: center;
-        background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(8, 2, 44));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        text-shadow: 4px 3px 0 rgb(202, 202, 202);
 }
 
 }
@@ -536,6 +548,7 @@ nav {
         display: grid;
         grid-template-columns: 180px auto;
         justify-content: unset;
+        padding-bottom: 0.5em;
     }
 
     .navbar {
@@ -563,9 +576,10 @@ nav {
         }
 
         a {
-            color: whitesmoke;
+            color: rgb(24, 23, 23);
             font-size: 1em;
             padding: .1em 1em;
+            padding-top: 0.5em;
         }
 
         ul.primary-nav {
@@ -578,13 +592,15 @@ nav {
         }
 
         li.whatsapp-cta a {
+            // padding-top: -0.5em;
+            padding-bottom: 0.5em;
             color: var(--light-whatsup);
             border: 3px solid var(--light-whatsup);
             font-weight: bold;
             border-radius: 5em;
             margin-top: -.2em;
             font-family: 'Abel';
-
+            // margin-bottom: 0.5em;
             &:hover {
                 background: var(--light-whatsup);
                 border: 3px solid var(--light-whatsup);
@@ -634,6 +650,11 @@ nav {
                     padding-left: 2.8rem;
                     margin-bottom: 0.5rem;
                   }
+
+                  .check-list {
+                      font-size: 1.1em;
+                    text-shadow: 3px 3px 0 rgb(202, 202, 202);
+                  }
             
                   .check-list li:before {
                     content: '';
@@ -645,7 +666,7 @@ nav {
                     height: 22px;
                     border-width: 0 5px 5px 0;
                     border-style: solid;
-                    border-color: #17ec5e;
+                    border-color: var(--primary-color);
                     transform-origin: bottom left;
                     transform: rotate(45deg);
                 }
@@ -666,6 +687,7 @@ nav {
                 margin-top: 0em;
                 text-align: center;
                 font-size: 1.2em; 
+                
             }
             .whatsapp-button{
                 display: none; 
@@ -764,7 +786,7 @@ nav {
     section.about-section {
 
         h1{
-            margin-left: 47%;
+            margin-left: 46%;
         margin-right: 50%;
         }
     }
@@ -810,7 +832,7 @@ nav {
     .contact-section {
         position: relative;
         font-weight: 500;
-        font-family: "Ubuntu";
+        font-family: "Titillium Web";
     
         .send-message-cta{
             margin-left: auto;
@@ -827,15 +849,15 @@ nav {
             height: 100%;
             
             .contact-message {
-                font-family: "Ubuntu";
+                // font-family: "Ubuntu";
                 text-decoration: none;
                 color: #000000;
-                font-family: 'Ubuntu';
+                font-family: "Titillium Web";
                 text-transform: uppercase;
                 letter-spacing: 0.2em;
-                font-size: 1.8em;
+                font-size: 2.1em;
                 line-height: 2;
-                font-weight: bold;
+                font-weight: 800;
                 text-rendering: optimizeLegibility;
                 text-align: center;
                 // background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(9, 66, 255));

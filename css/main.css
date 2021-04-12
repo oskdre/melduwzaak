@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Josefin+Slab:wght@500&family=Manrope:wght@300&family=Rokkitt:wght@200&family=Secular+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap");
 :root {
   --primary-color: #007AF3;
   --light-whatsup: #25D366;
@@ -10,7 +11,7 @@
 }
 
 body {
-  background: #F2F2F2;
+  background: #f2f2f2;
   margin: 0;
   font-family: 'Blinker';
 }
@@ -40,7 +41,7 @@ label {
 }
 
 .navbar {
-  background: #21468B;
+  background: #f2f2f2;
   padding: 1.0em 1em 1.0em 3em;
   font-family: 'Poppins';
 }
@@ -54,11 +55,11 @@ label {
 }
 
 .navbar .logo .first {
-  color: whitesmoke;
+  color: var(--primary-color);
 }
 
 .navbar .logo .middle {
-  color: whitesmoke;
+  color: var(--primary-color);
 }
 
 .navbar .logo .last {
@@ -204,9 +205,9 @@ label {
 }
 
 section.about-section {
-  font-family: 'Ubuntu';
+  font-family: 'Titillium Web';
   font-size: 0.9em;
-  font-weight: 300;
+  font-weight: 400;
   background: #F2F2F2;
   height: 47em;
   padding-bottom: 28em;
@@ -217,27 +218,28 @@ section.about-section {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  padding-bottom: 8em;
+  padding-bottom: 13em;
 }
 
 section.about-section h1 {
-  color: #646464;
+  color: #000000;
   margin-bottom: 0em;
-  font-size: 2.9em;
+  font-size: 2.3em;
   margin-left: 38%;
   width: 200px;
-  font-family: 'Swanky and Moo Moo';
+  font-family: 'Titillium Web';
+  font-weight: bold;
+  text-shadow: 3px 2px 0 #cacaca;
 }
 
 section.about-section li {
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  background: #646464;
+  background: #F2F2F2;
   text-align: center;
   width: 80%;
   height: 100%;
   margin: 0 auto 5em auto;
   border-radius: 1em;
+  color: #000000;
 }
 
 section.about-section li blockquote {
@@ -246,6 +248,8 @@ section.about-section li blockquote {
 
 section.about-section li img {
   text-align: center;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   width: 10em;
   height: 10em;
   margin-top: 10px;
@@ -260,15 +264,18 @@ section.about-section li img {
 }
 
 .services-section h1 {
+  font-family: "Titillium Web";
+  text-align: center;
   text-transform: uppercase;
+  text-shadow: 3px 2px 0 #cacaca;
 }
 
 .services-section .container {
-  font-family: 'Poppins';
+  font-family: "Titillium Web";
 }
 
 .services-section .container .check-list {
-  font-size: 1.2em;
+  font-size: 1.3em;
   display: inline;
   margin: 0;
   padding-left: 1.2rem;
@@ -289,9 +296,9 @@ section.about-section li img {
   top: -2px;
   width: 5px;
   height: 11px;
-  border-width: 0 2px 2px 0;
+  border-width: 0 3px 3px 0;
   border-style: solid;
-  border-color: #17ec5e;
+  border-color: var(--primary-color);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transform: rotate(45deg);
@@ -372,8 +379,13 @@ nav li a:hover {
   padding-bottom: 4em;
 }
 
+.contact-section .contact-left {
+  font-family: "Titillium Web";
+  font-weight: 600;
+}
+
 .contact-section .contact-left .send-message-cta {
-  background: #646464;
+  background: var(--primary-color);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
@@ -393,7 +405,7 @@ nav li a:hover {
 }
 
 .contact-section h2 {
-  font-family: "Ubuntu";
+  font-family: "Titillium Web";
   font-weight: 500;
 }
 
@@ -432,9 +444,7 @@ nav li a:hover {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   text-align: center;
-  background: -webkit-linear-gradient(black, #08022c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 3px 0 #cacaca;
 }
 
 .footer {
@@ -475,6 +485,7 @@ nav li a:hover {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+    padding-bottom: 0.5em;
   }
   .navbar {
     position: fixed;
@@ -506,9 +517,10 @@ nav li a:hover {
     display: flex;
   }
   .navbar nav a {
-    color: whitesmoke;
+    color: #181717;
     font-size: 1em;
     padding: .1em 1em;
+    padding-top: 0.5em;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
@@ -518,6 +530,7 @@ nav li a:hover {
     font-weight: bold;
   }
   .navbar nav li.whatsapp-cta a {
+    padding-bottom: 0.5em;
     color: var(--light-whatsup);
     border: 3px solid var(--light-whatsup);
     font-weight: bold;
@@ -565,6 +578,10 @@ nav li a:hover {
     padding-left: 2.8rem;
     margin-bottom: 0.5rem;
   }
+  .services-section .container .check-list {
+    font-size: 1.1em;
+    text-shadow: 3px 3px 0 #cacaca;
+  }
   .services-section .container .check-list li:before {
     content: '';
     display: block;
@@ -575,7 +592,7 @@ nav li a:hover {
     height: 22px;
     border-width: 0 5px 5px 0;
     border-style: solid;
-    border-color: #17ec5e;
+    border-color: var(--primary-color);
     -webkit-transform-origin: bottom left;
             transform-origin: bottom left;
     -webkit-transform: rotate(45deg);
@@ -679,7 +696,7 @@ nav li a:hover {
     height: 30px;
   }
   section.about-section h1 {
-    margin-left: 47%;
+    margin-left: 46%;
     margin-right: 50%;
   }
   .about-section {
@@ -716,7 +733,7 @@ nav li a:hover {
   .contact-section {
     position: relative;
     font-weight: 500;
-    font-family: "Ubuntu";
+    font-family: "Titillium Web";
   }
   .contact-section .send-message-cta {
     margin-left: auto;
@@ -733,15 +750,14 @@ nav li a:hover {
     height: 100%;
   }
   .contact-section .contact-right .contact-message {
-    font-family: "Ubuntu";
     text-decoration: none;
     color: #000000;
-    font-family: 'Ubuntu';
+    font-family: "Titillium Web";
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-size: 1.8em;
+    font-size: 2.1em;
     line-height: 2;
-    font-weight: bold;
+    font-weight: 800;
     text-rendering: optimizeLegibility;
     text-align: center;
   }
