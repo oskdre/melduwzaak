@@ -69,6 +69,43 @@ label {
 .navbar nav {
   display: none;
   font-size: 1.1em;
+  color: #000000;
+}
+
+.navbar nav .shade-position {
+  text-decoration: none;
+  /* Magic! */
+  color: #000000;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.navbar nav .shade-position:hover, .navbar nav .shade-position.active {
+  color: #0073d1;
+}
+
+.navbar nav .shade-position:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -4px;
+  border-radius: 50%;
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63);
+  transition: -webkit-transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63);
+  transition: transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63);
+  transition: transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63), -webkit-transform 0.3s cubic-bezier(0.61, 0, 0.405, 1.63);
+}
+
+.navbar nav .shade-position.active:after {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .navbar .container {
@@ -267,7 +304,7 @@ section.about-section li img {
   font-family: "Titillium Web";
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 3px 2px 0 #cacaca;
+  text-shadow: 3px 2px 0 #d3d2d2;
 }
 
 .services-section .container {
@@ -361,10 +398,6 @@ nav li a {
   padding: .5em;
   font-size: 1.3em;
   text-align: right;
-}
-
-nav li a:hover {
-  font-weight: bold;
 }
 
 .mobile-menu-exit {
@@ -580,7 +613,7 @@ nav li a:hover {
   }
   .services-section .container .check-list {
     font-size: 1.1em;
-    text-shadow: 3px 3px 0 #cacaca;
+    text-shadow: 3px 3px 0 #d1d0d0;
   }
   .services-section .container .check-list li:before {
     content: '';
