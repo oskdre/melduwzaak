@@ -11,13 +11,13 @@
 }
 
 body {
-  background: #f2f2f2;
+  background: url(../images/repeated-square-dark.png) repeat;
   margin: 0;
   font-family: 'Blinker';
 }
 
 a {
-  color: whitesmoke;
+  color: #a3a2a2;
 }
 
 ul {
@@ -41,7 +41,7 @@ label {
 }
 
 .navbar {
-  background: #f2f2f2;
+  background: #070707;
   padding: 1.0em 1em 1.0em 3em;
   font-family: 'Poppins';
 }
@@ -69,13 +69,13 @@ label {
 .navbar nav {
   display: none;
   font-size: 1.1em;
-  color: #000000;
+  color: #383737;
 }
 
 .navbar nav .shade-position {
   text-decoration: none;
   /* Magic! */
-  color: #000000;
+  color: #a3a2a2;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -155,7 +155,7 @@ label {
 .info .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  color: #494747;
+  color: #858282;
   letter-spacing: .1em;
   text-align: center;
 }
@@ -172,6 +172,7 @@ label {
 }
 
 .info .left-col h1 {
+  color: #c5c5c5;
   font-size: 2.5em;
   line-height: 1.3em;
   margin-top: .2em;
@@ -203,6 +204,7 @@ label {
   padding-left: .1em;
   -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  color: #c5c5c5;
 }
 
 .features-list li {
@@ -227,11 +229,9 @@ label {
 
 .info::after {
   content: "";
-  background: url("../images/nlphoo-mobile.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  opacity: 0.2;
   top: 0;
   left: 0;
   bottom: 0;
@@ -245,9 +245,7 @@ section.about-section {
   font-family: 'Titillium Web';
   font-size: 0.9em;
   font-weight: 400;
-  background: #F2F2F2;
   height: 47em;
-  padding-bottom: 28em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,32 +253,30 @@ section.about-section {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  padding-bottom: 13em;
+  padding-bottom: 22em;
 }
 
 section.about-section h1 {
-  color: #000000;
+  color: #e0e0e0;
   margin-bottom: 0em;
   font-size: 2.3em;
   margin-left: 38%;
   width: 200px;
   font-family: 'Titillium Web';
   font-weight: bold;
-  text-shadow: 3px 2px 0 #cacaca;
 }
 
 section.about-section li {
-  background: #F2F2F2;
   text-align: center;
   width: 80%;
   height: 100%;
   margin: 0 auto 5em auto;
   border-radius: 1em;
-  color: #000000;
+  color: #dddddd;
 }
 
 section.about-section li blockquote {
-  margin: 1em;
+  margin: 0.5em;
 }
 
 section.about-section li img {
@@ -295,8 +291,7 @@ section.about-section li img {
 }
 
 .services-section {
-  background: #F2F2F2;
-  color: #080808;
+  color: #f1f1f1;
   padding-bottom: 5em;
 }
 
@@ -304,7 +299,6 @@ section.about-section li img {
   font-family: "Titillium Web";
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 3px 2px 0 #d3d2d2;
 }
 
 .services-section .container {
@@ -392,7 +386,6 @@ nav ul.primary-nav {
 }
 
 nav li a {
-  color: white;
   text-decoration: none;
   display: block;
   padding: .5em;
@@ -413,6 +406,7 @@ nav li a {
 }
 
 .contact-section .contact-left {
+  color: white;
   font-family: "Titillium Web";
   font-weight: 600;
 }
@@ -470,14 +464,13 @@ nav li a {
 .contact-section .contact-message {
   font-family: "Ubuntu";
   text-decoration: none;
-  color: #000000;
+  color: #e9e9e9;
   font-family: 'Ubuntu';
   letter-spacing: 0.1em;
   line-height: 1;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   text-align: center;
-  text-shadow: 4px 3px 0 #cacaca;
 }
 
 .footer {
@@ -557,14 +550,14 @@ nav li a {
   }
   .navbar nav ul.primary-nav {
     margin: 0;
-    color: whitesmoke;
+    color: white;
   }
   .navbar nav li.current a {
     font-weight: bold;
   }
   .navbar nav li.whatsapp-cta a {
     padding-bottom: 0.5em;
-    color: #000000;
+    color: #b1aeae;
     border: 2px solid #000000;
     font-weight: bold;
     border-radius: 5em;
@@ -578,11 +571,9 @@ nav li a {
   }
   .info::after {
     content: "";
-    background: url("../images/nlphoo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    opacity: 0.32;
     top: 0;
     left: 0;
     bottom: 0;
@@ -613,7 +604,6 @@ nav li a {
   }
   .services-section .container .check-list {
     font-size: 1.1em;
-    text-shadow: 3px 3px 0 #d1d0d0;
   }
   .services-section .container .check-list li:before {
     content: '';
@@ -632,6 +622,7 @@ nav li a {
             transform: rotate(45deg);
   }
   .contact-section .contact-right .contact-message {
+    color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -643,6 +634,9 @@ nav li a {
   }
   .contact-section .contact-right .whatsapp-button {
     display: none;
+  }
+  section.about-section {
+    padding-bottom: 17em;
   }
 }
 
@@ -656,7 +650,7 @@ nav li a {
     max-width: 100%;
   }
   section.about-section {
-    padding-bottom: 20em;
+    padding-bottom: 17em;
   }
   .info .container {
     height: 40em;
@@ -734,7 +728,6 @@ nav li a {
   }
   .about-section {
     position: relative;
-    background: var(--primary-color);
     color: white;
     padding-bottom: 0em;
   }
@@ -784,7 +777,7 @@ nav li a {
   }
   .contact-section .contact-right .contact-message {
     text-decoration: none;
-    color: #000000;
+    color: #d6d6d6;
     font-family: "Titillium Web";
     text-transform: uppercase;
     letter-spacing: 0.2em;
